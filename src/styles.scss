@@ -1,0 +1,25 @@
+body {
+  background: #D4D6D9;
+}
+.button {
+  display: inline-block;
+  padding: 0.2em 0.4em;
+  background: #1D1F21;
+  border-radius: 0.1em;
+  color: #1492FF;
+  &.big {
+    font-size: 1.4em;
+    padding: 0.3em 0.6em;
+  }
+}
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.show {
+  display: inherit;
+}
+.hidden {
+  display: none;
+}

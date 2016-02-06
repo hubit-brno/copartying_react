@@ -1,0 +1,1 @@
+export const CREATE_COPARTY = 'CREATE_COPARTY';
