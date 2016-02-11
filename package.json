@@ -20,14 +20,17 @@
   "author": "Dominik Tilp",
   "license": "ISC",
   "dependencies": {
+    "es6-promise": "3.0.2",
     "immutable": "3.7.6",
+    "isomorphic-fetch": "2.2.1",
     "lodash": "4.0.1",
     "object-assign": "4.0.1",
     "react": "0.14.6",
     "react-dom": "0.14.6",
     "react-redux": "4.1.2",
     "redux": "3.1.5",
-    "redux-immutable": "3.0.3"
+    "redux-immutable": "3.0.3",
+    "redux-thunk": "1.0.3"
   },
   "devDependencies": {
     "babel": "5.8.23",

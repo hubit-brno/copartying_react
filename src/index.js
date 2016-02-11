@@ -7,6 +7,10 @@ import AppContainer from './components/appContainer/AppContainer.js';
 import configureStore from './configureStore';
 import './styles.scss';
 
+import promise from 'es6-promise';
+promise.polyfill();
+import 'isomorphic-fetch';
+
 const store = configureStore();
 
 render(

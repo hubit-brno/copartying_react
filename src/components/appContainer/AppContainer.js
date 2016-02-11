@@ -3,6 +3,7 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
 import CreateNewCoparty from '../createNewCoparty/CreateNewCoparty.js';
+import GetCoparties from '../getCoparties/GetCoparties.js';
 import * as CopartiesActions from '../../actions/copartiesActions.js';
 // import DevTools from '../devTools/DevTools.js';
 
@@ -15,6 +16,7 @@ class AppContainer extends React.Component {
       <div>
         {/*<DevTools />*/}
         <CreateNewCoparty copartiesAppState={copartiesAppState} actions={actions} />
+        <GetCoparties copartiesAppState={copartiesAppState} actions={actions} />
       </div>
     );
   }
