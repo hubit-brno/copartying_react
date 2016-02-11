@@ -3,6 +3,19 @@
     $ npm install
     $ npm run open:src
 
+# How-to's
+
+## add new async action
+
+- add new constants to `actionTypes.js`
+- use/add new action creator in `actions/copartiesActions.js`
+- in your component, call the action creator using `actions` prop like this: `onClick={actions.fooThatBar.bind(this)}`
+- adjust `reducers/coparties.js` to have initial state for your change, and to generate new state based on new constants you added
+- in your component, read the state using `props.copartiesAppState.get('moo42')`
+- the state you get is immutable datatype, meaning you need to use getters
+
+[more details could be seen in this commit](https://github.com/hubit-brno/copartying_react/commit/df24c31386730a8cc2cad496d414feb5d3a74c9a)
+
 # Individual node modules description
 
 These are dependencies bundled together even for production build (needed on runtime):
