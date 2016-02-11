@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import CreateNewCoparty from '../createNewCoparty/CreateNewCoparty.js';
 import GetCoparties from '../getCoparties/GetCoparties.js';
 import * as CopartiesActions from '../../actions/copartiesActions.js';
-// import DevTools from '../devTools/DevTools.js';
+import DevTools from '../devTools/DevTools.js';
 
 class AppContainer extends React.Component {
   render() {
@@ -14,7 +14,7 @@ class AppContainer extends React.Component {
 
     return (
       <div>
-        {/*<DevTools />*/}
+        {<DevTools />}
         <CreateNewCoparty copartiesAppState={copartiesAppState} actions={actions} />
         <GetCoparties copartiesAppState={copartiesAppState} actions={actions} />
       </div>
