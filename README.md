@@ -20,17 +20,19 @@
 
 These are dependencies bundled together even for production build (needed on runtime):
 
+* *es6-promise* - polyfill for ES6's Promise implementation (needed for AJAX requests tracking) - [npm](https://www.npmjs.com/package/es6-promise)
+* *immutable* - library with data structures that are not allowed to change theirs content - [npm](https://www.npmjs.com/package/immutable)
+* *isomorphic-fetch* - wrapper for HTTP requests to backend, working with Promises - [npm](https://www.npmjs.com/package/isomorphic-fetch)
+* *lodash* - utility functions for manipulation with arrays, objects, strings and some extras - [npm](https://www.npmjs.com/package/lodash)
 * *object-assign* - polyfill for ES6's Object.assign (copies props from one object to another) - [npm](https://www.npmjs.com/package/object-assign)
 * *react* - react core, providing lifecycle methods, definition and creation of elements - [npm](https://www.npmjs.com/package/react)
 * *react-dom* - bridge between react core and browser DOM, (eg. `render` and `findDOMNode` functions) - [npm](https://www.npmjs.com/package/react-dom)
-* *redux* - single state and one way data flow framework, super simple and easy to use with any JS library - [npm](https://www.npmjs.com/package/redux)
 * *react-redux* - utilities functions, reducing boilerplate and providing glue between redux and react - [npm](https://www.npmjs.com/package/redux)
-* *immutable* - library with data structures that are not allowed to change theirs content - [npm](https://www.npmjs.com/package/immutable)
+* *react-router* - URL routing and routes mapping to react components in declarative way - [npm](https://www.npmjs.com/package/react-router)
+* *react-router-redux* - maps URL into redux state and redux cycle - [npm](https://www.npmjs.com/package/react-router-redux)
+* *redux* - single state and one way data flow framework, super simple and easy to use with any JS library - [npm](https://www.npmjs.com/package/redux)
 * *redux-immutable* - utility allowing to create redux reducers with use of immutable state - [npm](https://www.npmjs.com/package/redux-immutable)
-* *lodash* - utility functions for manipulation with arrays, objects, strings and some extras - [npm](https://www.npmjs.com/package/lodash)
 * *redux-thunk* - middleware for redux, allowing to return function from action creator (async actions with promises) - [npm](https://www.npmjs.com/package/redux-thunk)
-* *es6-promise* - polyfill for ES6's Promise implementation (needed for AJAX requests tracking) - [npm](https://www.npmjs.com/package/es6-promise)
-* *isomorphic-fetch* - wrapper for HTTP requests to backend, working with Promises - [npm](https://www.npmjs.com/package/isomorphic-fetch)
 
 And here are the ones for dev time only, not needed on runtime:
 
