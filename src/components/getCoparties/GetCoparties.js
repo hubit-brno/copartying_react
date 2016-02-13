@@ -17,13 +17,18 @@ function getLoadedCopartiesContent(coparties) {
 }
 
 const GetCoparties = (props) => {
-  const { copartiesAppState, actions } = props;
-  const copartiesContent = getLoadedCopartiesContent(copartiesAppState.get('coparties'));
-  const isSyncing = copartiesAppState.get('isSyncing');
+  const { coparties, actions } = props;
+  const copartiesContent = getLoadedCopartiesContent(coparties.get('coparties'));
+  const isSyncing = coparties.get('isSyncing');
+
+  const loadCoparties = (e) => {
+    e.nativeEvent.preventDefault();
+    actions.loadCoparties();
+  };
 
   return (
     <div className="GetCoparties container">
-      <a href="#" onClick={actions.loadCoparties.bind(this)}>Load it all</a>
+      <a href="#" onClick={loadCoparties}>Load it all</a>
       <p>Loaded: {isSyncing ? 'LOADING' : ''}</p>
       {copartiesContent}
     </div>
@@ -32,7 +37,7 @@ const GetCoparties = (props) => {
 
 GetCoparties.propTypes = {
   actions: PropTypes.object.isRequired,
-  copartiesAppState: PropTypes.object.isRequired
+  coparties: PropTypes.object.isRequired
 };
 
 export default GetCoparties;
